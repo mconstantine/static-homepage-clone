@@ -1,0 +1,26 @@
+.banner {
+  background-color: var(--color-text-default);
+  color: #fff;
+  font-weight: 600;
+  font-size: 18px;
+  padding-left: 1em;
+  padding-right: 1em;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.banner a {
+  text-decoration: none;
+}
+
+.banner * + * {
+  margin-left: 1em;
+}
+
+.banner button,
+.banner a.button {
+  background-color: #fff;
+  color: var(--color-text-default);
+  font-weight: normal;
+}

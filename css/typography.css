@@ -1,0 +1,84 @@
+@font-face {
+  font-family: "AvenirNext";
+  src: url("../fonts/AvenirNext-Regular.woff2") format("woff2"),
+    url("../fonts/AvenirNext-Regular.woff") format("woff"),
+    url("../fonts/AvenirNext-Regular.otf") format("opentype");
+  font-style: normal;
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: "AvenirNext";
+  src: url("../fonts/AvenirNext-Medium.woff2") format("woff2"),
+    url("../fonts/AvenirNext-Medium.woff") format("woff"),
+    url("../fonts/AvenirNext-Medium.otf") format("opentype");
+  font-style: normal;
+  font-weight: 600;
+}
+
+@font-face {
+  font-family: "AvenirNext";
+  src: url("../fonts/AvenirNext-Bold.woff2") format("woff2"),
+    url("../fonts/AvenirNext-Bold.woff") format("woff"),
+    url("../fonts/AvenirNext-Bold.otf") format("opentype");
+  font-style: normal;
+  font-weight: 700;
+}
+
+@font-face {
+  font-family: "AvenirNextDemi";
+  src: url("../fonts/AvenirNext-Demi.woff2") format("woff2"),
+    url("../fonts/AvenirNext-Demi.woff") format("woff"),
+    url("../fonts/AvenirNext-Demi.otf") format("opentype");
+  font-style: normal;
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: "hsg-icons";
+  src: url("../fonts/hsg-icons.woff2") format("woff2"),
+    url("../fonts/hsg-icons.woff") format("woff"),
+    url("../fonts/hsg-icons.otf") format("opentype");
+  font-style: normal;
+  font-weight: 400;
+}
+
+body {
+  line-height: 1.5;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin-top: 1em;
+  margin-bottom: 1em;
+}
+
+h1 {
+  font-size: 36px;
+  line-height: 1.2;
+}
+
+h2 {
+  font-size: 22px;
+  font-weight: 600;
+  line-height: 1.2;
+}
+
+h3 {
+  font-size: 32px;
+  line-height: 1.2;
+}
+
+h4 {
+  font-size: 18px;
+  font-weight: 600;
+}
+
+h5 {
+  font-size: 16px;
+  font-weight: 600;
+}

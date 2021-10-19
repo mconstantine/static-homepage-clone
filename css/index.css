@@ -1,0 +1,105 @@
+@import url("./typography.css");
+@import url("./header/index.css");
+@import url("./banner.css");
+@import url("./hero.css");
+@import url("./services.css");
+@import url("./stats.css");
+@import url("./logos.css");
+@import url("./footer.css");
+
+:root {
+  --max-width: 1080px;
+  --color-text-default: #33475b;
+  --color-text-active: #007a8c;
+  --color-text-alt: #0091ae;
+  --color-cta: #ff7a59;
+  --color-cta-active: #ffbcac;
+  --color-cta-active-inverse: #fff1ee;
+  --color-grey-lighter: #f5f8fa;
+  --color-grey-light: #cbd6e2;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "AvenirNext", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  color: var(--color-text-default);
+  -webkit-font-smoothing: antialiased;
+}
+
+a {
+  color: inherit;
+}
+
+a:hover {
+  color: var(--color-text-active);
+}
+
+small {
+  font-size: 0.78em;
+}
+
+.paged {
+  width: 90vw;
+  max-width: var(--max-width);
+  margin-left: auto;
+  margin-right: auto;
+}
+
+button {
+  background-color: inherit;
+  border: none;
+  font-size: inherit;
+  font-weight: inherit;
+  color: inherit;
+}
+
+a.button {
+  text-decoration: none;
+}
+
+button,
+a.button {
+  display: inline-block;
+  background-color: var(--color-cta);
+  color: #fff;
+  line-height: 1;
+  padding: 12px 18px;
+  font-size: 14px;
+  font-weight: 600;
+  border-radius: 3px;
+  cursor: pointer;
+  transition: background-color 500ms ease;
+  white-space: nowrap;
+}
+
+button:hover,
+a.button:hover {
+  background-color: var(--color-cta-active);
+}
+
+.buttons {
+  display: flex;
+  justify-content: center;
+}
+
+.buttons button + button,
+.buttons a.button + a.button,
+.buttons button + a.button,
+.buttons a.button + button {
+  margin-left: 1em;
+}
+
+button.inverse,
+a.button.inverse {
+  color: var(--color-cta);
+  border: 1px solid var(--color-cta);
+  background-color: #fff;
+}
+
+button.inverse:hover,
+a.button.inverse:hover {
+  background-color: var(--color-cta-active-inverse);
+}

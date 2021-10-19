@@ -1,0 +1,36 @@
+.search {
+  position: relative;
+  text-align: right;
+}
+
+.search input {
+  position: relative;
+  z-index: 1;
+  font-family: inherit;
+  font-size: inherit;
+  font-weight: inherit;
+  box-sizing: border-box;
+  padding: 0.3em;
+  padding-left: 32px;
+  width: 0%;
+  min-width: 32px;
+  background-color: transparent;
+  transition: width 500ms ease, opacity 500ms ease;
+  opacity: 0;
+}
+
+.search img {
+  position: absolute;
+  right: 16px;
+  top: 5px;
+  transition: right 500ms ease;
+}
+
+.search input:focus {
+  width: 100%;
+  opacity: 1;
+}
+
+.search input:focus + img {
+  right: calc(100% - 24px);
+}

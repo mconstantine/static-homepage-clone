@@ -1,0 +1,36 @@
+.stats {
+  display: grid;
+  grid-template: 1fr 1fr 1fr 1fr / 1fr 1fr;
+}
+
+.stats > *:not(:nth-child(7)):not(:nth-child(8)) {
+  border-bottom: 1px solid #fff;
+}
+
+.stats > *:nth-child(odd) {
+  border-right: 1px solid #fff;
+}
+
+.stats > * {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  padding-top: 2em;
+  padding-bottom: 1em;
+}
+
+.stats > * p {
+  margin-top: 0.5em;
+}
+
+.stats > * span:first-child {
+  display: inline-block;
+  vertical-align: middle;
+  font-size: 45px;
+  font-weight: bold;
+}
+
+.stats > * span + span {
+  display: block;
+}

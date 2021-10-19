@@ -1,0 +1,86 @@
+@import url("./popover.css");
+@import url("./search-input.css");
+@import url("./submenu.css");
+
+body > header {
+  padding-top: 1em;
+}
+
+/* First menu (language, search etc) */
+body > header:first-child > nav {
+  font-size: 12px;
+  font-weight: 600;
+}
+
+body > header:first-child > nav,
+body > header:first-child > nav > div {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+body > header:first-child > nav > div > * + * {
+  margin-left: 2em;
+}
+
+body > header:first-child > nav .icon-and-text {
+  display: flex;
+  align-items: center;
+}
+
+body > header:first-child > nav .icon-and-text img {
+  margin-right: 0.5em;
+}
+
+/* Second menu (logo etc) */
+body > header + header > nav,
+/* Logo + menu */
+body > header + header > nav > div,
+/* Menu */
+body > header + header > nav > div > div + div {
+  display: flex;
+  align-items: center;
+}
+
+body > header + header {
+  position: sticky;
+  top: 0;
+  min-height: 80px;
+  justify-content: space-between;
+  background-color: #fff;
+  box-shadow: 0 2px 4px rgb(45 62 80 / 12%);
+}
+
+.logo {
+  margin-right: 2em;
+}
+
+.menu-option {
+  font-size: 18px;
+  font-weight: 600;
+  padding: 1rem;
+  cursor: pointer;
+}
+
+.menu-option:hover {
+  color: var(--color-text-active);
+  text-decoration: underline;
+}
+
+.expandable {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+}
+
+.expandable::after {
+  content: "";
+  width: 4px;
+  height: 4px;
+  border: 1px solid currentColor;
+  transform: rotate(45deg);
+  border-top-color: transparent;
+  border-left-color: transparent;
+  margin-left: 0.5em;
+  margin-bottom: 4px;
+}
